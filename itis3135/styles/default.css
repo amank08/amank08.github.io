@@ -1,0 +1,56 @@
+body {
+    background-color:rgb(11, 57, 52);
+    color: lavender;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a:link {
+    color:rgb(172, 176, 189);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(172, 176, 189);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  img {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    
+  }
+  figcaption {
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .table{
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+ 
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  div {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: auto;
+}
+  
