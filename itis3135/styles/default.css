@@ -21,18 +21,23 @@ a:link {
     text-align: center;
     width: 400px;
     margin: auto;
-    
   }
+
+  main {
+    text-align: center;
+  }
+ /*   
   figcaption {
     text-align: center;
   }
-
+*/
   header {
     text-align: center;
   }
   footer {
     text-align: center;
   }
+  /*
   .table{
     text-align: center;
   }
@@ -48,6 +53,8 @@ a:link {
   h3 {
     text-align: center;
   }
+  */
+  
   div {
     text-align: left;
     margin-left: 30%;
