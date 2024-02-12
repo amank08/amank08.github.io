@@ -3,7 +3,7 @@
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width = device width", initial scale = "1.0">
-        <title>Aman Kumar's Awesome Koala || ITIS 3135 Homepage</title>
+        <title>Aman Kumar's Awesome Koala || ITIS 3135 Forms</title>
         <link rel="stylesheet" href="styles/default.css">
     </head>
     <body>
@@ -17,11 +17,52 @@
                 <a href = "contract.html">Contract</a>
                 ❁
                 <a href = "tables.html">Tables</a>
+                ❁
+                <a href = "forms.html">Forms</a>
+                ❁
+                <a href = "website_evaluations.html">Website Evaluations</a>
+                ❁
+                <a href = "CRAPPY.html">CRAPPY</a>
             </nav>
         </header>
         <main>
-            <h2>Home</h2>
-            <p> Hello this is my 3135 course page</p>
+            <h2>Forms</h2>
+            <p> Welcome to Awesome Koalas</p>
+            <div class = "form">
+            <form action="#" method="post" id="businessForm">
+                <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="First Last" size = "30"><br>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="(123)456-7890" size="15"><br>
+                <br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com" size="30"><br>
+                <br>
+                <label>Interests:</label>
+                <input type="checkbox" id="interest1" name="interest1" value="sports"> Sports
+                <input type="checkbox" id="interest2" name="interest2" value="music"> Music
+                <input type="checkbox" id="interest3" name="interest3" value="technology"> Technology
+                <br>
+                <br>
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contactEmail" name="contactMethod" value="email"> Email
+                <input type="radio" id="contactPhone" name="contacyMethod" value="phone"> Phone
+                <br>
+                <br>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>    
+                </select><br>
+                <br>
+                <input type="reset" value="Reset" class="reset">
+                <input type="submit" value="Submit" class="submit">
+            </fieldset>
+            </form>
+            </div>
         </main>
         <footer>
             <nav>
@@ -37,11 +78,12 @@
                 ❁
                 <a href = "http://www.linkedin.com/in/aman-kumar03">LinkedIn</a>
             </nav>
-            <a href="https://validator.w3.org/check?uri=referer">
-                <img style="border:0;width:100px;height:40px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+            <p class="design">Designed by TheAwesomeKoalas</a> &copy; 2023</p>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
                </a>
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:100px;height:40px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
             </a>
         </footer>
     </body>

@@ -19,10 +19,11 @@ background-color: transparent;
 text-decoration: none;
 }
 
+figure {
+    text-align: center; 
+}
 img {
-width: 400px;
-margin-left: auto;
-margin-right: auto;
+    width: 400px;
 }
 
 table tr:nth-child(odd){
@@ -40,11 +41,16 @@ table, th, td, tr{
     margin-left: auto; 
     margin-right: auto;
 }
-.table1 {
-    margin-left: 33%;
+ol {
+    margin-left: auto;
+    margin-right: auto;
 }
-figcaption {
-text-align: center;
+
+.form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header, footer {
@@ -52,8 +58,7 @@ text-align: center;
 }
 
 .intro {
-text-align: left;
-margin-left: 30%;
+margin-left: auto;
 margin-right: auto;
 }
 
