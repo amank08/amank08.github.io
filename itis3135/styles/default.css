@@ -53,6 +53,10 @@ header, footer {
 text-align: center;
 }
 
+.reviewer {
+    text-align: center;
+}
+
 /* Remove Initial */
 html {
     all:initial;
