@@ -1,6 +1,6 @@
 body {
-background-color:rgb(11, 57, 52);
-color: lavender;
+background-color:#0B3934;
+color: #D9DBF1;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -9,13 +9,13 @@ h1, h2, p {
 }
 
 a:link {
-color:rgb(172, 176, 189);
+color: #8C9FAB;
 background-color: transparent;
 text-decoration: none;
 }
 
 a:visited {
-color: rgb(172, 176, 189);
+color: #8C9FAB;
 background-color: transparent;
 text-decoration: none;
 }
@@ -25,6 +25,10 @@ figure {
 }
 img {
     width: 400px;
+}
+
+header, footer {
+    text-align: center;
 }
 
 table tr:nth-child(odd){
@@ -43,14 +47,30 @@ ol {
     margin-left: auto;
     margin-right: auto;
 }
-
-.form {
+/*FORMS*/
+form {
     padding: 10px;
-
 }
 
-header, footer {
-text-align: center;
+.divider {
+    border: 7px double;
+    background-color: #B3BDCE;
+    color: #254E4C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.reset,
+.submit {
+    background-color: #254E4C;
+    border: 3px double;
+    color: #B3BDCE;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .reviewer {
