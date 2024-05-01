@@ -17,10 +17,13 @@
         background-color: #1B9AAA;
         color: #E1E8D0;
         padding: 2.5rem 4rem;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     header h1 {
         margin: 0;
+        display: inline;
     }
     main {
         padding: 2.5rem 4rem;
@@ -36,21 +39,45 @@
         bottom: 0;
         width: 100%;
     }
+    .contact {
+        margin-top: 20px;
+    }
+    
 /* Media Queries */
     @media (max-width: 600px) {
         header, main, footer {
             padding: 1.5rem 2rem;
         }
     }
+    
+
 </style>
 </head>
 <body>
 <header>
-    <h1>Welcome to Kumar Enterprises</h1>
-    <p>Your Trusted Partner for Technology Solutions</p>
+    <img src="../images/312446.png" alt="logo" width="100" height="auto">
+    <h1>Kumar Enterprises</h1>
 </header>
 <main>
-    <p>At Kumar Enterprises, we deliver tailored technology solutions for businesses. We are your trusted partner for innovation.</p>
+    <h2>Kumar Enterprises' Services</h2>
+    <p>At Kumar Enterprises, we deliver tailored technology solutions for businesses. We are your trusted partner for innovation. Whether you're a small startup or a large corporation, we provide the expertise and resources to help you leverage technology to drive growth and achieve your strategic goals.</p>
+    
+    <ul>
+        <li>Experienced professionals with diverse expertise</li>
+        <li>Innovation and creativity</li>
+        <li>A proven track record of successful projects</li>
+        <li>Strong focus on quality and reliability</li>
+        <li>Communication and collaboration</li>
+        <li>Dedication to building long-term partnerships</li>
+    </ul>
+    <p>Join us on a journey of innovation and let us help you transform your business with cutting-edge technology solutions.</p>
+    <br>
+    <div class="contact">
+        <p><strong>Contact us:</strong></p>
+        Phone: 555-555-5555<br>
+        Email: kumarenterprises@example.com<br>
+        Address: 123 Main Street, Anytown USA<br>
+    </div>
 </main>
 <footer>
     <p>Kumar Enterprises &copy; 2024</p>
