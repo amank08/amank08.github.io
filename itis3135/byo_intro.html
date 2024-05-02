@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aman Kumar's Awesome Koala || ITIS 3135 Homepage</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+            <form id="byoForm" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Personal Information:</legend>
+                    <label for="name">Name:</label>
+                        <input type="text" id="name" required><br><br>
+            
+                        <label for="mascot">Mascot:</label>
+                        <input type="text" id="mascot" required><br><br>
+            
+                        <label for="image">Image:</label>
+                        <input type="file" id="image" required><br><br><br>
+            
+                        <label for="imageCaption">Image Caption:</label>
+                        <input type="text" id="imageCaption" required><br><br>
+            
+                        <label for="background">Personal Background:</label>
+                        <input type="text" id="background" required><br><br>
+            
+                        <label for="professional">Professional Background:</label>
+                        <input type="text" id="professional" required><br><br>
+            
+                        <label for="academic">Academic Background:</label>
+                        <input type="text" id="academic" required><br><br>
+            
+                        <label for="web-dev">Background in WebDevelopment:</label>
+                        <input type="text" id="web-dev" required><br><br>
+            
+                        <label for="platform">Primary Computer Platform:</label>
+                        <input type="text" id="platform" required><br><br>
+            
+                        <label for="funny">Funny Thing About You:</label>
+                        <input type="text" id="funny" required><br><br>
+            
+                        <label for="anything">Anything Else You Would Like To Add:</label>
+                        <input type="text" id="anything" required><br><br>
+            
+                        <label>Courses currently taking:</label><br>
+                        <div id="courses">
+                            <button type="button" id="addCourseBtn">Add Course</button><br>
+                        </div>
+            
+                        <label for="contract">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+                        <input type="checkbox" id="contract" required><br><br>
+                </fieldset>
+                <button type="submit" id="Submit">Submit</button>
+                        <button type="reset" id="Reset">Reset</button>
+            </form>
+            <div id="userIntro" class="userinfo-container"></div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/survey.js"></script>
+    </body>
+</html>
