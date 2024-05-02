@@ -19,24 +19,30 @@ function validateForm() {
     return isValid;
   }
   
-  // Function to reset the form
   function resetForm() {
     const form = document.getElementById('byoForm');
     form.reset();
   }
   
-  // Function to add new course text boxes
   function addCourse() {
     const coursesDiv = document.getElementById('courses');
-    const courseCount = coursesDiv.querySelectorAll('.courseField').length;
+    const courseCount = coursesDiv.querySelectorAll('.courseWrapper').length;
   
-    // Create a new text input for the course
-    const newCourse = document.createElement('input');
-    newCourse.type = 'text';
-    newCourse.classList.add('courseField');
-    newCourse.placeholder = `Course ${courseCount + 1}`;
+    const newCourseWrapper = document.createElement('div');
+    newCourseWrapper.classList.add('courseWrapper');
   
-    // Create a delete button
+    const courseName = document.createElement('input');
+    courseName.type = 'text';
+    courseName.classList.add('courseField');
+    courseName.placeholder = `Course Name ${courseCount + 1}`;
+    courseName.name = `courseName${courseCount + 1}`;
+  
+    const courseDescription = document.createElement('input');
+    courseDescription.type = 'text';
+    courseDescription.classList.add('courseField');
+    courseDescription.placeholder = `Course Description ${courseCount + 1}`;
+    courseDescription.name = `courseDescription${courseCount + 1}`;
+  
     const deleteButton = document.createElement('button');
     deleteButton.type = 'button';
     deleteButton.innerText = 'Delete';
@@ -44,60 +50,86 @@ function validateForm() {
       coursesDiv.removeChild(newCourseWrapper);
     });
   
-    // Create a wrapper for the course field and delete button
-    const newCourseWrapper = document.createElement('div');
-    newCourseWrapper.appendChild(newCourse);
+    newCourseWrapper.appendChild(courseName);
+    newCourseWrapper.appendChild(courseDescription);
     newCourseWrapper.appendChild(deleteButton);
   
-    // Add the wrapper to the coursesDiv
     coursesDiv.appendChild(newCourseWrapper);
-  }
-  
-  // Function to submit the form and display data
-  function submitForm(event) {
+  }  
+function submitForm(event) {
+    event.preventDefault(); 
     if (!validateForm()) {
-      event.preventDefault();
       return;
     }
   
-    event.preventDefault();
-  
-    const formData = new FormData(document.getElementById('byoForm'));
-  
-    // Construct the output for the user information container
+    const form = document.getElementById('byoForm');
+    const formData = new FormData(form);
     const userInfo = document.getElementById('userIntro');
-    userInfo.innerHTML = '';
   
-    formData.forEach((value, key) => {
-      if (key === 'image') {
-        // Displaying image may require a different approach, this is just a placeholder.
-        const img = document.createElement('img');
-        img.src = URL.createObjectURL(value);
-        img.alt = 'Uploaded Image';
-        userInfo.appendChild(img);
-      } else {
-        const paragraph = document.createElement('p');
-        paragraph.innerText = `${key}: ${value}`;
-        userInfo.appendChild(paragraph);
-      }
+    const name = formData.get('name');
+    const mascot = formData.get('mascot');
+    const imageFile = formData.get('image');
+    const imageCaption = formData.get('imageCaption');
+    const background = formData.get('background');
+    const professional = formData.get('professional');
+    const academic = formData.get('academic');
+    const webDev = formData.get('web-dev');
+    const platform = formData.get('platform');
+    const funny = formData.get('funny');
+    const anything = formData.get('anything');
+  
+    const courseWrappers = document.querySelectorAll('.courseWrapper');
+    const courses = Array.from(courseWrappers).map((wrapper, index) => {
+      const courseName = wrapper.querySelectorAll('input')[0].value || `Course ${index + 1}`;
+      const courseDescription = wrapper.querySelectorAll('input')[1].value || '';
+      return { title: courseName, description: courseDescription };
     });
   
-    // Add a reset button
+    const output = `
+      <h2>${name}'s ${mascot}</h2>
+      <div id="loadImage"></div>
+      <p>${imageCaption}</p>
+      <ul>
+        <li><strong>Personal Background:</strong> ${background}</li>
+        <li><strong>Professional Background:</strong> ${professional}</li>
+        <li><strong>Academic Background:</strong> ${academic}</li>
+        <li><strong>Background in Web Development:</strong> ${webDev}</li>
+        <li><strong>Primary Computer Platform:</strong> ${platform}</li>
+        <li><strong>Courses Currently Taking:</strong>
+          <ul>
+            ${courses.map(course => `<li><strong>${course.title}:</strong> ${course.description}</li>`).join('')}
+          </ul>
+        </li>
+        <li><strong>Funny Thing About You:</strong> ${funny}</li>
+        <li><strong>Anything Else You Would Like To Add:</strong> ${anything}</li>
+      </ul>
+    `;
+  
+    userInfo.innerHTML = output;
+  
+    if (imageFile) {
+      const img = document.createElement('img');
+      img.src = URL.createObjectURL(imageFile);
+      img.alt = 'Uploaded Image';
+      img.style.maxWidth = '200px';
+      document.getElementById('loadImage').appendChild(img);
+    }
+  
     const resetLink = document.createElement('button');
     resetLink.innerText = 'Reset';
     resetLink.addEventListener('click', () => {
-      document.getElementById('userIntro').innerHTML = '';
+      userInfo.innerHTML = '';
       resetForm();
+      document.getElementById('byoForm').style.display = 'block';
     });
   
     userInfo.appendChild(resetLink);
   
-    // Hide the form
     document.getElementById('byoForm').style.display = 'none';
   }
   
-  // Event listeners
   document.getElementById('addCourseBtn').addEventListener('click', addCourse);
   document.getElementById('byoForm').addEventListener('submit', submitForm);
   document.getElementById('Reset').addEventListener('click', resetForm);
+  
   

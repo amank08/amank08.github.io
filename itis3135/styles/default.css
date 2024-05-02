@@ -108,6 +108,28 @@ form {
     background-color: #728A93;
     }
 
+/* BYO */
+#loadImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadImage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#userIntro li {
+    margin-left: auto;
+}
+#userIntro button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Remove Initial */
 html {
     all:initial;
