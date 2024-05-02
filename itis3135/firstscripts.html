@@ -23,23 +23,24 @@
                 <br>
                 <input type="submit" value="Submit">
             </form>
-    
             <h3 id="greeting"></h3>
     
             <label for="favorite-number">Enter your favorite number (0 to 10):</label>
             <input type="number" id="favorite-number" min="0" max="10">
-            <button onclick="showPolygonName()">Show Polygon Name</button>
-    
-            <button onclick="function1()">Function 1</button>
-            <button onclick="function2()">Function 2</button>
-            <button onclick="function3()">Function 3</button>
-            <button onclick="function4()">Function 4</button>
+            <button class="fbuttons" onclick="showPolygonName()">Show Polygon Name</button>
+            
+            <div class="buttons">
+            <button class="fbuttons" onclick="suggestBottleColor()">Suggest a Water Bottle Color</button>
+            <button class="fbuttons" onclick="calculateHydrationNeed()">Calculate Hydration Need</button>
+            <button class="fbuttons" onclick="generateCustomizationIdea()">Generate Customization Idea</button>
+            <button class="fbuttons" onclick="estimateTimeToFillBottle()">Estimate Time to Fill Bottle</button>
+            </div>
         </main>
     
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
-        <script src="scripts/scripts.js"></script>
+        <script src="scripts/defaultscripts.js"></script>
         <script src="scripts/HTMLInclude.min.js"></script>
     </body>
 </html>

@@ -77,6 +77,15 @@ form {
     text-align: center;
 }
 
+/* First Scripts */
+.buttons {
+    padding: 20px;
+}
+.fbuttons {
+
+    background-color: #728A93;
+    }
+
 /* Remove Initial */
 html {
     all:initial;
