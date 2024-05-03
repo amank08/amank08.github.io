@@ -36,9 +36,8 @@ header, footer {
     text-align: center;
 }
 
-ul {
+.intro {
     display: block;
-    margin-left: auto;
     margin-right: auto;
 }
 
