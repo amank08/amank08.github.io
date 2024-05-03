@@ -24,7 +24,7 @@ a:hover {
 figure {
     text-align: center; 
 }
-img {
+.center {
     width: 400px;
 }
 
@@ -134,12 +134,96 @@ form {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* Drawing */
 canvas{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Slideshow */
+
+  .container {
+    position: relative;
+  }
+  
+  .slides {
+    background-color: #588989;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .num {
+    background-color: #A9EFE7;
+    border-radius: 25px;
+    color: #09342F;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+  }
+
+.showcase {
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  .caption-container {
+    text-align: center;
+    background-color: #A9EFE7;
+    padding: 8px 20px;
+    color: #09342F;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  .demo {
+    width: 200px;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
 /* Remove Initial */
 html {
