@@ -134,6 +134,56 @@ form {
     margin-left: auto;
     margin-right: auto;
 }
+/* Calculator */
+.calculator {
+    background-color: #D9DBF1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #2B444A;
+    margin: 0 auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: 10px;
+    width: 300px;
+}
+
+#display {
+    width: calc(100% - 40px);
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #B3BDCE;
+    border: 2px solid #3F6264;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #184440;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn.equal {
+    grid-column: 1 / -1;
+    background-color: #0B3934;
+}
+
+.btn.operator {
+    background-color: #3F6264;
+}
+
+.btn:hover {
+    background-color: #59767C;
+}
 /* Drawing */
 canvas{
     display: block;
