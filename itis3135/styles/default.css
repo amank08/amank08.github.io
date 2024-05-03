@@ -38,7 +38,8 @@ header, footer {
 }
 
 button {
-    background-color: #A9EFE7;
+    background-color: #254E4C;
+    color: #D9DBF1;
     border: 3px double;
     text-align: center;
     cursor: pointer;
