@@ -1,0 +1,5 @@
+[
+    {"name": "validation_link_html", "url": "https://validator.w3.org/check?uri=referer"},
+    {"name": "validation_link_css", "url": "https://jigsaw.w3.org/css-validator/check/referer"},
+    {"name": "validation_link_disability", "url": "https://wave.webaim.org/report#/"}
+]
