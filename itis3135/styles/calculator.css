@@ -1,5 +1,5 @@
 .calculator {
-    background-color: silver;
+    background-color: #D9DBF1;
     text-align: center;
     color: #2B444A;
     border-radius: 10px;
@@ -8,13 +8,14 @@
     width: 300px;
     margin: 0 auto;
     margin-top: 2rem;
+    padding: 20px;
 }
 
 #display {
     width: calc(100% - 40px);
     padding: 20px;
     font-size: 2rem;
-    background-color: #fff;
+    background-color: #B3BDCE;
     border: 2px solid #3F6264;
     border-radius: 5px;
 }
