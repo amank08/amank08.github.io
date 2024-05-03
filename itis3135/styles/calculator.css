@@ -1,14 +1,12 @@
 .calculator {
     background-color: #D9DBF1;
-    text-align: center;
-    color: #2B444A;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
+    color: #2B444A;
     margin: 0 auto;
     margin-top: 2rem;
-    padding: 20px;
+    overflow: hidden;
+    padding: 10px;
+    width: 300px;
 }
 
 #display {
@@ -22,8 +20,8 @@
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
     gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .btn {

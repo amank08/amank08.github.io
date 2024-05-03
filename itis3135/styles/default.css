@@ -39,12 +39,11 @@ header, footer {
 
 button {
     background-color: #254E4C;
-    color: #D9DBF1;
     border: 3px double;
-    text-align: center;
+    color: #D9DBF1;
     cursor: pointer;
+    text-align: center;
 }
-
 
 /*tables*/
 h3{
@@ -69,16 +68,16 @@ table tr:first-child{
 table, th, td{
     border: 1.5px solid black;
     border-collapse: collapse;
-    text-align: center;
     padding: 1px 4px 1px 4px;
+    text-align: center;
 }
-
 ol {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     padding-left: 10px;
+    text-align: center;
+
 }
 ol li {
     list-style-position: inside;
@@ -90,12 +89,12 @@ form {
 }
 
 .divider {
-    border: 7px double;
+    align-items: center;
     background-color: #B3BDCE;
+    border: 7px double;
     color: #254E4C;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center; 
 }
 
@@ -104,10 +103,10 @@ form {
     background-color: #254E4C;
     border: 3px double;
     color: #B3BDCE;
+    cursor: pointer;
+    font-size: 16px;
     padding: 15px 32px;
     text-align: center;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 .reviewer {
@@ -115,22 +114,22 @@ form {
 }
 
 /* BYO */
-#loadImage {
+.loadImage {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-#loadImage img {
+.loadImage img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#userIntro li {
+.userinfo-container li {
     margin-left: auto;
 }
-#userIntro button {
+.userinfo-container button {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -148,9 +147,9 @@ html {
 }
 /* Foundational Three */
 main, .maincontainer {
-    width: 95%;
     margin: 0 auto;
     max-width: 1200px;
+    width: 95%;
 }
 
 /* MOBILE QUERIES */

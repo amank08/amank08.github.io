@@ -87,7 +87,7 @@ function submitForm(event) {
   
     const output = `
       <h2>${name} || ${mascot}</h2>
-      <div id="loadImage"></div>
+      <div id="loadImage" class="loadImage"></div>
       <p>${imageCaption}</p>
       <ul>
         <li><strong>Personal Background:</strong> ${background}</li>
