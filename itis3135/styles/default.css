@@ -9,20 +9,16 @@ h1, h2, p {
 }
 
 a:link {
-color: #8C9FAB;
-background-color: transparent;
-text-decoration: none;
-}
-
-a:hover {
-background-color: transparent;
-text-decoration: underline;
+    color: #BAF2EB;
+    text-decoration: none;
 }
 
 a:visited {
-color: #8C9FAB;
-background-color: transparent;
-text-decoration: none;
+    color:#BAF2EB;
+    text-decoration: none;
+}
+a:hover {
+    color: #31D8C4;
 }
 
 figure {
@@ -42,7 +38,7 @@ header, footer {
 }
 
 button {
-    background-color: #728A93;
+    background-color: #A9EFE7;
     border: 3px double;
     text-align: center;
     cursor: pointer;
