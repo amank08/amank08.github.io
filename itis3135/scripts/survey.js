@@ -86,7 +86,7 @@ function submitForm(event) {
     });
   
     const output = `
-      <h2>${name}'s ${mascot}</h2>
+      <h2>${name} || ${mascot}</h2>
       <div id="loadImage"></div>
       <p>${imageCaption}</p>
       <ul>
