@@ -36,12 +36,19 @@ header, footer {
     text-align: center;
 }
 
+ul {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     background-color: #728A93;
     border: 3px double;
     text-align: center;
     cursor: pointer;
 }
+
 
 /*tables*/
 h3{
@@ -145,8 +152,6 @@ html {
 }
 /* Foundational Three */
 main, .maincontainer {
-    margin-left: 30%;
-    margin-right: 30%;
     width: 95%;
     margin: 0 auto;
     max-width: 1200px;
