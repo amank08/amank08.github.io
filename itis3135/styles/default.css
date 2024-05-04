@@ -32,6 +32,9 @@ header, footer {
     text-align: center;
 }
 
+footer {
+    margin-top: auto;
+}
 .intro {
     display: block;
     margin-right: auto;
