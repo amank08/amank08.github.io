@@ -74,14 +74,9 @@ p {
   }
   
   fieldset {
-    border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
+    padding: 20px;
   }
   
-  fieldset:last-of-type {
-    border-bottom: none;
-  }
   
   label {
     display: block;
@@ -114,7 +109,7 @@ p {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: #3b3b4f;
+    background-color: #003b5b;
     border-color: white;
     min-width: 300px;
   }
