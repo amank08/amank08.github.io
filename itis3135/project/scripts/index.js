@@ -1,3 +1,4 @@
+// Slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -5,10 +6,19 @@ function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
+// Previous/Next controls event handlers
+document.getElementById("prevSlide").addEventListener("click", () => plusSlides(-1));
+document.getElementById("nextSlide").addEventListener("click", () => plusSlides(1));
+
+// Thumbnail controls event handlers
+const thumbnails = document.getElementsByClassName("demo");
+for (let i = 0; i < thumbnails.length; i++) {
+    thumbnails[i].addEventListener("click", () => currentSlide(i + 1));
+}
+
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
 function showSlides(index) {
   const slides = document.getElementsByClassName("mySlides");
   const dots = document.getElementsByClassName("demo");
@@ -24,6 +34,8 @@ function showSlides(index) {
   caption.innerHTML = dots[index - 1].alt;
 }
 
+
+// Form validation
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("inquiriesForm");
 
