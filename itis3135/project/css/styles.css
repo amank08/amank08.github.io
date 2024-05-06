@@ -1,17 +1,17 @@
 body {
-    background: linear-gradient(to bottom, #0077B8 0%, #00507A 100%);
-    color: #F5EFED;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0077b8 0%, #00507a 100%);
+  color: #f5efed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -19,238 +19,230 @@ h1 {
   display: inline;
 }
 a:link {
-  color: #F6ED9A;
+  color: #f6ed9a;
   text-decoration: none;
 }
 
 a:visited {
-    color: #F6ED9A;
-    text-decoration: none;
+  color: #f6ed9a;
+  text-decoration: none;
 }
 
 .navbar {
-    background-color: #003b5b;
-    padding: 10px 20px; 
-    border-radius: 25px;
-
+  background-color: #003b5b;
+  padding: 10px 20px;
+  border-radius: 25px;
 }
 
 .nav-menu {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav-header {
-    margin: 0; 
+  margin: 0;
 }
 
 .nav-header a {
-    text-decoration: none; 
-    color: #F6ED9A;
-    ; 
-    padding: 8px 16px; 
-    transition: color 0.3s; 
+  text-decoration: none;
+  color: #f6ed9a;
+  padding: 8px 16px;
+  transition: color 0.3s;
 }
 
 a:hover {
-    color: #D0BC11; 
+  color: #d0bc11;
 }
 
 p {
-    margin: 1em auto;
-    text-align: center;
-  }
-  
-  form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-  }
-  
-  fieldset {
-    padding: 20px;
-  }
-  
-  
-  label {
-    display: block;
-    margin: 0.5rem 0;
-  }
-  
-  input,
-  textarea,
-  select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-  }
-  
-  input, textarea {
-    background-color: #003b5b;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-  }
-  
-  .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #003b5b;
-    border-color: white;
-    min-width: 300px;
-  }
-  
-  input[type="file"] {
-    padding: 1px 2px;
-  }
-  
-  .inline{
-    display: inline; 
-  }
+  margin: 1em auto;
+  text-align: center;
+}
 
-  footer {
-    display: block;
-    background-color: #003b5b;
-    padding: 7px;
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    background-color: #001B29;
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    border-radius: 25px;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #f6ed9a;
-    padding: 2px 16px;
-    color: #0F0A0A;
-    font-size: 18px;
-    border-radius: 10px;
-  }
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+fieldset {
+  padding: 20px;
+}
 
-  .showcase { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
 
-  .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-.journals-and-notebooks, 
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #003b5b;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #003b5b;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.inline {
+  display: inline;
+}
+
+footer {
+  display: block;
+  background-color: #003b5b;
+  padding: 7px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  background-color: #001b29;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  border-radius: 25px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #f6ed9a;
+  padding: 2px 16px;
+  color: #0f0a0a;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.showcase {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.journals-and-notebooks,
 .planners,
-.posters-and-invitations{
+.posters-and-invitations {
   background-color: #003b5b;
   width: fit-content;
   transform: scale(0.9);
   border-radius: 25px;
 }
 
-
 /* MOBILE QUERIES */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
-
-
 }
 
 @media screen and (min-width: 601px) and (max-width: 980px) {
-
-
 }
 
 @media screen and (min-width: 370px) and (max-width: 600px) {
-
 }
